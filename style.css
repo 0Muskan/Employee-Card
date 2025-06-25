@@ -1,0 +1,92 @@
+body {  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #91e4d8, #e3e2c5);
+  background-size: 400% 400%;
+  animation: bodyGradient 30s ease infinite;
+  margin: 0;
+  padding: 40px;
+}
+
+@keyframes bodyGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  color: #1f2937;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+ .card {
+  background: linear-gradient(135deg, #fff, #317fcd, #f479d1);
+  background-size: 400% 400%;
+  animation: cardColorFlow 10s ease infinite;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@keyframes cardGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #6366f1; 
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1a1a2e;
+}
+
+h2 span {
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #374151;
+}
+
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-links img.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img.icon {
+  transform: scale(1.1);
+}
